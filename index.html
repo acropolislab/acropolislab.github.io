@@ -15,17 +15,21 @@
         }
         header {
             background: #000;
-            color: #333;
+            color: #fff;
             padding: 10px 20px;
-            text-align: center;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .title {
+            text-align: left;
         }
         header img {
             max-height: 150px;
-            display: block;
-            margin: 0 auto;
-        }
-        header h1 {
-            margin: 10px 0 5px;
+            height: 100px;
+            margin-left: 20px;
         }
         nav {
             margin: 20px auto;
@@ -64,9 +68,13 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Acropolis Lab Logo">
-        <h1>Acropolis Lab</h1>
-        <p>The Makerspace of Athens</p>
+        <div class="header-container">
+            <div class="title">
+                <h1>Acropolis Lab</h1>
+                <p>The Makerspace of Athens</p>
+            </div>
+            <img src="logo.png" alt="Acropolis Lab Logo">
+        </div>
     </header>
     <nav>
         <a href="#about">About Us</a>
@@ -77,14 +85,14 @@
     <section id="about">
         <h2>About Us</h2>
         <p>
-            Welcome to <strong>Acropolis Lab</strong>, the premier makerspace nestled in the heart of Athens. Inspired by the rich cultural heritage of the Acropolis and powered by modern technology, we provide a collaborative environment for creators, innovators, and enthusiasts to bring their ideas to life.
+            Welcome to <strong>Acropolis Lab</strong>, a makerspace nestled in the heart of Athens. Inspired by the rich cultural heritage of the Acropolis and powered by modern technology, we provide a collaborative environment for creators, innovators, and enthusiasts to bring their ideas to life.
         </p>
     </section>
     <section id="facilities">
         <h2>Facilities & Equipment</h2>
         <ul>
-            <li><strong>Digital Fabrication:</strong> CNC Machine, Laser Cutter, 3D Printers</li>
-            <li><strong>Electronics & Prototyping:</strong> Oscilloscope, Soldering Stations, Computers & Controllers</li>
+            <li><strong>Digital Fabrication:</strong> CNC Machine, Laser Cutter, 3D Printer</li>
+            <li><strong>Electronics & Prototyping:</strong> Oscilloscope, Soldering Station, Computers & Controllers</li>
             <li><strong>Woodworking:</strong> Lathe, Drill Press, Woodworking Power Tools</li>
             <li><strong>General Workshop:</strong> Kiln, Hand Tools, Power Tools</li>
         </ul>
@@ -92,7 +100,7 @@
     <section id="membership">
         <h2>Membership & Access</h2>
         <p>
-            Acropolis Lab operates on a membership model. All memberships are handled through our <a href="https://patreon.com/yourmakerspace" target="_blank">Patreon page</a>. By subscribing, you support the makerspace while gaining access to:
+            Acropolis Lab operates on a membership model. All memberships are handled through our <a href="https://patreon.com/acropolislab" target="_blank">Patreon page</a>. By subscribing, you support the makerspace while gaining access to:
         </p>
         <ul>
             <li>All tools and equipment (with safety training)</li>
@@ -102,7 +110,7 @@
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:info@acropolislab.com">info@acropolislab.com</a></p>
+        <p>Email: <a href="mailto:acropolislab@gmail.com">info@acropolislab.com</a></p>
         <p>Location: Athens, Greece</p>
         <p><em>Join us to explore, create, and innovate at Acropolis Lab!</em></p>
     </section>
