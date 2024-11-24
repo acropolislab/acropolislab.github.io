@@ -16,20 +16,20 @@
         header {
             background: #fff;
             color: #000;
-            padding: 10px 20px;
+            padding: 20px;
         }
         .header-container {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            gap: 20px;
+        }
+        header img {
+            height: 300px; /* Ensures the logo is at least 3x larger */
+            max-height: 300px;
+            width: auto; /* Maintains aspect ratio */
         }
         .title {
             text-align: left;
-        }
-        header img {
-            max-height: 150px;
-            height: 100px;
-            margin-left: 20px;
         }
         nav {
             margin: 20px auto;
@@ -69,11 +69,11 @@
 <body>
     <header>
         <div class="header-container">
+            <img src="logowh.png" alt="Acropolis Lab Logo">
             <div class="title">
                 <h1>Acropolis Lab</h1>
                 <p>Central Athens Makerspace</p>
             </div>
-            <img src="logowh.png" alt="Acropolis Lab Logo">
         </div>
     </header>
     <nav>
@@ -110,7 +110,7 @@
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:acropolislab@gmail.com">info@acropolislab.com</a></p>
+        <p>Email: <a href="mailto:info@acropolislab.com">info@acropolislab.com</a></p>
         <p>Location: Athens, Greece</p>
         <p><em>Join us to explore, create, and innovate at Acropolis Lab!</em></p>
     </section>
