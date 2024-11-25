@@ -21,20 +21,30 @@
         .header-container {
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Space between title and image */
+        }
+        .logo {
+            flex: 15%;
+            display: flex;
+            justify-content: center;
         }
         .title {
-            text-align: left;
+            flex: 15%;
+            text-align: center;
+        }
+        .space-image-container {
+            flex: 70%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .space-image-container img {
+            height: auto;
+            max-height: 300px;
+            width: 100%;
+            object-fit: contain;
         }
         header img {
-            height: 300px; /* For logo */
+            max-height: 150px;
             width: auto;
-            margin-right: 20px;
-        }
-        .space-image {
-            height: 200px; /* For space.png */
-            max-width: 300px;
-            margin-left: 20px;
         }
         nav {
             margin: 20px auto;
@@ -74,12 +84,16 @@
 <body>
     <header>
         <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Acropolis Lab Logo">
+            </div>
             <div class="title">
                 <h1>Acropolis Lab</h1>
                 <p>Central Athens Makerspace</p>
             </div>
-            <img src="logo.png" alt="Acropolis Lab Logo">
-            <img src="space.png" alt="Space Decoration" class="space-image">
+            <div class="space-image-container">
+                <img src="space.png" alt="Space Decoration">
+            </div>
         </div>
     </header>
     <nav>
